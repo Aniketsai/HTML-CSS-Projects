@@ -1,0 +1,274 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+} 
+#nav{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+#navP1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#nav h4{
+  display: none;
+}
+.balls {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  animation: swap 2s infinite alternate ease-in-out;
+}
+@keyframes swap {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px); 
+  }
+}
+#navP1 .balls:nth-child(2) {
+  animation-direction: alternate-reverse;
+}
+#navP2{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#dropbox1 :hover, 
+#dropbox2 :hover,
+#navP2 a:hover,
+#nav2 a:hover{
+  text-decoration: underline orangered;
+}
+label[for="lang"] , [for="Country"]{
+  font-size: 22px;
+  font-weight: 500;
+}
+#lang ,#Country {
+  width: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+#Country {
+  width: 80px;
+}
+#navP2 a{
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+#nav2{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding:0 40px ;
+}
+#nav2 a{
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+#content{
+  height: calc(100% - 150px); 
+  width: 100%;
+}
+#text-content{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+  background-color: transparent;
+  height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+  background-color: orangered;
+  
+}
+.elem{
+  height: 100%;
+  width: 60%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elem h2{
+   font-size: 6vw;
+   font-weight: 300;
+}
+#image-content{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+  display: none;
+}
+#image-content img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  object-position:0 40%;
+}
+
+@media(max-width:600px){
+  #nav{
+    height: 40px;
+    padding: 0 20px; 
+  }
+  #navP1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  #nav h4{
+    display: initial;
+    margin-left: 10px;
+  }
+  #nav h4 i{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .balls {
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 50%;
+    animation: swap 2s infinite alternate ease-in-out;
+  }
+  @keyframes swap {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(30px); 
+    }
+  }
+  #navP1 .balls:nth-child(2) {
+    animation-direction: alternate-reverse;
+  }
+  #navP2{
+    gap:0px;
+    display:flex;
+  }
+  #nav a, #dropbox2{
+    display: none;
+  }
+  #dropbox1 label,#dropbox1 select {
+    font-size: 12px;
+  }
+  #dropbox1 :hover, 
+  #dropbox2 :hover,
+  #navP2 a:hover,
+  #nav2 a:hover{
+    text-decoration: underline orangered;
+  }
+  label[for="lang"] , [for="Country"]{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #lang ,#Country {
+    width: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+  }
+  #Country {
+    width: 80px;
+  }
+  #navP2 a{
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  }
+  #nav2{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:0 20px ;
+  }
+  #nav2 a{
+    font-size: 2.5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+  }
+  #content{
+    height: calc(100% - 60px); 
+    width: 100%;
+  }
+  #text-content{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+  #text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 3px;
+  }
+  #text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    
+  }
+  .elem{
+    height: 100%;
+    width: 75%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .elem h2{
+     font-size: 12vw;
+     font-weight: 300;
+     white-space: nowrap; /*size bdi hai fir bhi text wrap nhi hoga */
+  }
+  #image-content{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+  #image-content::-webkit-scrollbar{
+    display: none;
+  }
+  #image-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    object-position:50% 40%;
+  }
+}

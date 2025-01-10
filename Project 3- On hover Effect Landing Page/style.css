@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 70%;
+}
+#ltop{
+    height: 70%;
+    width: 100%;
+    background-image: url("./images/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lbottom{
+    height: 30%;
+    width: 100%;
+    padding: 20px;
+    padding-left: 100px;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+#lb{
+    height: 100%;
+    width: 50%;
+}
+#lb h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#lb p{
+    font-size: 16px;
+}
+#rb{
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+#rb h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.elem{
+    margin: 10px 0 10px;
+    display: flex;
+}
+.elemtxt{
+    margin-left: 10px;
+}
+.elemtxt p{
+    opacity: 0.5;
+}
+#right{
+    height: 100%;
+    width: 30%;
+}
+#rtop{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    position: relative;
+}
+#rtop a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#rtop a:nth-child(3){
+    margin-left: 10px;
+    position: relative;
+}
+#rtop a:nth-child(3)::before{
+    content: "";
+    top:23px;
+    height: 2px;
+    width: 10px;
+    background-color: black;
+    margin: -15px;
+    position: absolute;
+}
+#rtop #icons{
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#icons i{
+    font-size: 20px;
+}
+#rbottom{
+    height: 30%;
+    width: 100%;
+    background-image: url(./images/img\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.elem {
+    margin: 10px 0 10px;
+    display: flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+}
+
+.elem:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+/* Icons Animation */
+#icons i {
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation for scaling and color */
+}
+
+#icons i:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: rgb(50, 150, 255); /* Change color on hover */
+}
+
+/* Anchor Tags Animation */
+#rtop a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth animation */
+}
+
+#rtop a:hover {
+    color: rgb(50, 150, 255); /* Change text color on hover */
+    transform: translateX(5px); /* Slide slightly to the right */
+}
+

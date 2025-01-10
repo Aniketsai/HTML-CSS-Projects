@@ -1,0 +1,235 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: flex-end;
+padding:0px 90px;
+padding-top: 150px;
+}
+#left{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#left h1{
+    font-size: 10vw;
+    font-weight: 500;
+    line-height: 9vw;
+}
+#bottom-left{
+    height: 45%;
+    width: 100%;
+}
+#color{
+width: fit-content;
+padding: 8px 15px;
+display: flex;
+align-items: center;
+border: 1px solid black;
+border-radius: 50px;
+}
+#color h3{
+font-size: 1.3vw;
+margin-right: 5px;
+font-weight: 500;
+}
+#color1{
+height: 20px;
+width: 20px;
+border-radius: 50%;
+background-color: burlywood;
+margin:0 4px ;
+}
+#color2{
+height: 20px;
+width: 20px;
+border-radius: 50%;
+background-color: brown;
+}
+#left h2{
+    margin: 30px 0 10px;
+}
+#left p{
+     width: 50%;
+}
+
+#right{
+height: 90%;
+width: 35%;
+position: relative;
+}
+#right-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+#right-top h2{
+    font-weight: 500;
+}
+#right-top h4{
+    padding-right: 10px;
+}
+#right-top h4 i{
+    color: gold;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 91.6%;
+    object-position: 0 20%;
+}
+#black-circle{
+    height: 145px;
+    width: 145px;
+    background-color: rgb(26 ,26 ,26);
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: -12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#black-circle h2{
+    font-weight: 500;
+    color: white;
+}
+#rotated{
+    position: absolute;
+    transform-origin: 0 0;
+    rotate: -90deg;
+    left: -10%;
+    bottom: 10%;
+    font-weight: 500;
+    font-size: 30px;
+}
+@media(max-width: 600px){
+    #main{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding:30px 30px 0;
+        gap:40px;
+        }
+    #left{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    #left h1{
+        font-size: 18vw;
+        font-weight: 500;
+        line-height:18vw ;
+    }
+    #bottom-left{
+        height: 55%;
+        width: 100%;
+    }
+    #color{
+    width: fit-content;
+    padding: 5px 7px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    }
+    #color h3{
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 500;
+    }
+    #color1{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: burlywood;
+    margin:0 4px ;
+    }
+    #color2{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: brown;
+    }
+    #left h2{
+        margin: 10px 0 8px;
+        font-size: 4vw;
+        
+    }
+    #left p{
+        font-size: 2.3vw;
+         width: 75%;
+    }
+    #right{
+        height:100%  ;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #right-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    }
+    #right-top h2{
+        font-weight: 500;
+        font-size: 5vw;
+    }
+    #right-top h4{
+        font-size: 4vw;
+    }
+    #right-top h4 i{
+        color: gold;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    #black-circle{
+        height: 80px;
+        width: 80px;
+        background-color: rgb(26 ,26 ,26);
+        border-radius: 50%;
+        position: absolute;
+        top: -20%;
+        right: -5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #black-circle h2{
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+    }
+    #rotated{
+        position: absolute;
+        transform-origin: 0 0;
+        rotate: 0deg;
+        left: 0;
+        top: -13%;
+        font-weight: 500;
+        font-size: 5vw;
+    }    
+}
